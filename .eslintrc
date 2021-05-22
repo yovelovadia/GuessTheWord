@@ -1,0 +1,37 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react", "react-native", "react-hooks", "module-resolver"],
+  "rules": {
+    "react/prop-types": 0,
+    "no-use-before-define": "off",
+    "global-require": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-case-declarations": "off",
+    "no-plusplus": "off",
+
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {},
+      "node": {
+        "extensions": [".js", ".ios.js", ".android.js"]
+      }
+    },
+    "env": {
+      "node": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        "root": ["."],
+        "imageTypes": [".png"],
+        "alias": {
+          "@components": "./src/components",
+          "@hooks": "./src/hooks",
+          "@routes": "./src/navigation/routes",
+          "@styles": "./src/shared/styles",
+          "@utils": "./src/shared/utils",
+          "@images": "./assets/images",
+          "@actions": "./src/store/actions"
+        }
+      }
+    ]
+  ]
+}
